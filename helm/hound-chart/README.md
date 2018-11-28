@@ -4,7 +4,6 @@
 
 The configuration of the repositories to scrape is mounted in a secret due it can contain credentials.
 
+```bash
+$ helm template ./helm/hound-chart --name hound --namespace hound --set repositories.giantswarm.username=XXXX --set repositories.giantswarm.token=XXXX --set domain=cs.giantswarm.io | kubectl apply -f -
 ```
-helm install ./helm/hound-chart --set efsFileSystemId=fs-12345678 --set awsRegion=ue-central-1
-```
-

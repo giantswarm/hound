@@ -11,3 +11,5 @@ repositories:
     token: TOKEN
     owner: giantswarm
     username: USERNAME
+
+domain: example.com

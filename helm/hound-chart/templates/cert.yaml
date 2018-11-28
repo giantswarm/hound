@@ -6,12 +6,12 @@ spec:
   acme:
     config:
     - domains:
-      - cs.giantswarm.io
+      - {{ Values.domain }}
       http01:
         ingress: ""
   commonName: ""
   dnsNames:
-  - cs.giantswarm.io
+  - {{ Values.domain }}
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
