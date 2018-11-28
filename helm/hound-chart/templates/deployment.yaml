@@ -30,8 +30,8 @@ spec:
             path: "config.json"
       containers:
       - name: hound
-        image: pipo02mix/hound
-        imagePullPolicy: Always
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.pullPolicy}}
         ports:
           - containerPort: 6080
             name: "http-server"

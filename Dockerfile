@@ -2,11 +2,11 @@ FROM alpine
 
 ENV GOPATH /go
 
-COPY . /go/src/github.com/etsy/hound
+COPY . /go/src/github.com/giantswarm/hound
 
 RUN apk update \
 	&& apk add go git subversion libc-dev mercurial bzr openssh \
-	&& go install github.com/etsy/hound/cmds/houndd \
+	&& go install github.com/giantswarm/cmds/houndd \
 	&& apk del go \
 	&& rm -f /var/cache/apk/* \
 	&& rm -rf /go/src /go/pkg

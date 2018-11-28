@@ -19,6 +19,9 @@ export function UrlToRepo(repo, path, line, rev) {
         anchor = '' // wikis do not support direct line linking
     }
 
+    //Hack to remove username and token from links
+    url = url.replace(/(.*)(github\.com.*)/, 'https://$2')
+
     // Hacky solution to fix _some more_ of the 404's when using SSH style URLs.
     // This works for both github style URLs (git@github.com:username/Foo.git) and
     // bitbucket style URLs (ssh://hg@bitbucket.org/username/Foo).

@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/etsy/hound/issues"
+    "url": "https://github.com/giantswarm/hound/issues"
   },
   "homepage": "https://github.com/etsy/hound#readme",
   "devDependencies": {
