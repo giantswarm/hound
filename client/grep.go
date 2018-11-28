@@ -5,8 +5,8 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/etsy/hound/ansi"
-	"github.com/etsy/hound/config"
+	"github.com/giantswarm/hound/ansi"
+	"github.com/giantswarm/hound/config"
 )
 
 type grepPresenter struct {

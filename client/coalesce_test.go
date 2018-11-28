@@ -3,7 +3,7 @@ package client
 import (
 	"testing"
 
-	"github.com/etsy/hound/index"
+	"github.com/giantswarm/hound/index"
 )
 
 // TODO(knorton):
